@@ -16,14 +16,10 @@ void testApp::draw(){
 	//Basic Shapes examples 
 	
 	ofSetColor(150, 255, 255);					// define color to use when drawing
-	
-	//example draw Line
 	ofLine(100, 100, 540, 380);					// draw Line
-	
-	//example draw Rect
+	ofSetColor(150, 0, 80);					// define color to use when drawing
 	ofRect(220, 140, 200, 200);					// draw Rectangle
-	
-	//example draw Triangle
+	ofSetColor(255, 0, 255);					// define color to use when drawing
 	ofTriangle(200, 295, 450, 295, 325, 145);	// draw Triangle
 
 	
