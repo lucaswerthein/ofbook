@@ -17,8 +17,8 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	ofSetColor(255, 0, 0, 50);
-	x = ofGetWidth()/2;
-	y = ofGetHeight()/2;
+	int x = 512;
+	int y = 384;
 	for(int i = 0; i < 10; i++){
 		ofCircle(x, y, i*30);	
 	}
