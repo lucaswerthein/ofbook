@@ -3,8 +3,6 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	ofBackground(0, 0, 0);
-	ofEnableSmoothing();
-
 }
 
 //--------------------------------------------------------------
@@ -16,7 +14,7 @@ void testApp::update(){
 void testApp::draw(){
 	ofSetColor(255, 0, 0);
 	int y = 360;
-	for(int i = 0; i<ofGetWidth();i++){
+	for(int i = 0; i<21;i++){
 		ofCircle(i*50, y, 10);
 	}
 
