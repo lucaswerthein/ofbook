@@ -4,6 +4,8 @@
 void testApp::setup(){
     ofBackground(0, 0, 0); // Set background color
     ofEnableAlphaBlending(); // Enable alpha blending
+	
+	
 }
 
 //--------------------------------------------------------------
@@ -14,17 +16,17 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 
-	x = 0; // Set variable x to 0
-    y = 0; // Set variable y to 0
-    w = ofGetWidth()/50.0 + 1; // Width of rectangle
-    h = ofGetHeight()/30.0 + 1; // Height of rectangle
-    
+	float x = 0;
+    float y = 0;
+    float   w = ofGetWidth()/50.0 + 1;
+    float h = ofGetHeight()/30.0 + 1;
+	
     for(int j=0; j<30; j++){
         for(int i=0; i<50; i++){
-            ofSetColor(255/20 * j, 127, 255/50 * i, 200); // Color of rectangles change as values of "i" and "j" change
-            x = ofGetWidth() / 50.0 * i; // Equally spaced out by 20.48 pixels alonng the x coordinate
-            y = ofGetHeight() / 30.0 * j; // Equally spaced out by 25.6 pixels alonng the y coordinate
-            ofRect(x, y, w, h); // Draw rectangle 
+            ofSetColor(255/30 * j, 127, 255/50 * i, 200);
+            x = ofGetWidth() / 50.0 * i;
+            y = ofGetHeight() / 30.0 * j;
+            ofRect(x, y, w, h);
         }
     }
 }
