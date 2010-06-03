@@ -19,9 +19,6 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 	
-	float y,r,g,b,a;
-	float x;
-	float radius;
 
 };
 

@@ -18,15 +18,11 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	
-	r = ofRandom(0, 255);
-	g = ofRandom(0, 255);
-	b = ofRandom(0, 255);
-	a = ofRandom(0, 200);
-	ofSetColor(r, g, b, a);
+	ofSetColor(ofRandom(0,255), ofRandom(0,255), ofRandom(0,255), ofRandom(0,255));
 	
-	y = ofRandom(0,ofGetHeight());
-	x = ofRandom(0,ofGetWidth());
-	radius = ofRandom(0, 50);
+	int y = ofRandom(0,ofGetHeight());
+	int x = ofRandom(0,ofGetWidth());
+	int radius = ofRandom(0, 50);
 	ofCircle(x, y, radius);
 
 }
