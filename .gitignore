@@ -4,8 +4,9 @@
 */*/*/*.mode1v3
 
 #folders
-*/*/bin
+#*/*/bin
 !*/*/bin/data
+*/*/*/*.app
 
 # osx noise
 .DS_Store
