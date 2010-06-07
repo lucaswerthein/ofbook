@@ -3,6 +3,7 @@
 
 
 #include "ofMain.h"
+#define NUM 40
 
 class testApp : public ofBaseApp{
 
@@ -19,16 +20,14 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-	
+		int xPos[NUM];
+		int yPos[NUM];
+		int xSpeed[NUM];
+		int ySpeed[NUM];
 		
-		ofImage myBase;				// myBont is a variable of the type "ofImage"
-		ofTrueTypeFont myFont;		// myFont is a variable of the type "ofTrueTypeFont"
-		ofSoundPlayer Base;			// Base is a variable of the type "ofSoundPlayer"
+		int radius;
+		ofSoundPlayer chirpSound;
 	
-	
-	
-	
-
 	
 };
 
