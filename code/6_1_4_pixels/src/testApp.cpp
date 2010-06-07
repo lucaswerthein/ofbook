@@ -21,7 +21,6 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
 	
-	
 }
 
 //--------------------------------------------------------------
@@ -34,10 +33,10 @@ void testApp::draw(){
 	// if the mouse is in the picture, let's get the color under the mouse
 	// set the color
 	
-	if ((mouseX >= 0 && mouseX < myPicture.width) && (mouseY >= 0 && mouseY < myPicture.height)){
-		unsigned char * pixels = myPicture.getPixels();
-		int pixUnderMouse = pixels[mouseY * myPicture.width + mouseX];
-		ofSetColor(pixUnderMouse, pixUnderMouse, pixUnderMouse);
+	if ((mouseX >= 0 && mouseX < myPicture.width) && (mouseY >= 0 && mouseY < myPicture.height)){	//if mouse cursors is inside my image
+		unsigned char * pixels = myPicture.getPixels();												//get pixels of image
+		int pixUnderMouse = pixels[mouseY * myPicture.width + mouseX];								//pixel value of mousecursor
+		ofSetColor(pixUnderMouse, pixUnderMouse, pixUnderMouse);									//color set to value read by int pixUnderMouse
 		ofRect(myPicture.width, 0, 100,100);
 	}
 	
