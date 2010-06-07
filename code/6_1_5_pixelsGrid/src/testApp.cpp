@@ -36,8 +36,8 @@ void testApp::draw(){
 	
 	unsigned char * pixels = myPicture.getPixels();
 	
-	for (int i = 0; i < myPicture.width; i += 15){
-		for (int j = 0; j < myPicture.height; j+= 15){
+	for (int i = 0; i < myPicture.width; i += 5){
+		for (int j = 0; j < myPicture.height; j+= 5){
 			
 			int pixel = pixels[j * myPicture.width + i];
 			float brightness = pixel / 255.0;
