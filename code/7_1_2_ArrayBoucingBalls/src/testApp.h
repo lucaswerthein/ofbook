@@ -4,7 +4,7 @@
 #include "ofMain.h"
 
 
-#define NUM_BALLS 250
+#define NUM_BALLS 250 //NUM_BALLS will have value of 250. Since this is going to be the value of our array, we are saying that our array will have 250 points
 
 class testApp : public ofBaseApp{
 
@@ -21,10 +21,10 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 	
-		int posX[NUM_BALLS];
-		int posY[NUM_BALLS];
-		int velX[NUM_BALLS];
-		int velY[NUM_BALLS];
+		int posX[NUM_BALLS]; //Variable posX as an array of integers NUM_BALLS, which essentially equals 250
+		int posY[NUM_BALLS]; //Variable posY as an array of integers NUM_BALLS, which essentially equals 250
+		int velX[NUM_BALLS]; //Variable velX as an array of integers NUM_BALLS, which essentially equals 250
+		int velY[NUM_BALLS]; //Variable velY as an array of integers NUM_BALLS, which essentially equals 250
 
 };
 

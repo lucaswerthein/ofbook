@@ -6,13 +6,13 @@ void testApp::setup(){
     ofSetCircleResolution(64); 
     ofEnableAlphaBlending();    
    
-    for(int i = 0; i < 10; i++){
-        posX[i] = ofRandom(0, ofGetWidth());
-		posY[i] = ofRandom(0, ofGetHeight());
+    for(int i = 0; i < 10; i++){				//go through the loop ten times
+        posX[i] = ofRandom(0, ofGetWidth());	//floating point in the array will have a random position between 0 and screen width
+		posY[i] = ofRandom(0, ofGetHeight());	//floating point in the array will have a random position between 0 and screen height
 		
 	}
 	
-	counter = 0;
+	counter = 0; 
 }
 
 //--------------------------------------------------------------
@@ -23,10 +23,10 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	
-	ofSetColor(255, 255, 255, 80);
+	ofSetColor(50, 200, 100);
 	
-    for(int i = 0; i < 10; i++){
-        ofCircle(posX[i],posY[i], 20); 
+    for(int i = 0; i < 10; i++){			//go through loop ten times
+        ofCircle(posX[i],posY[i], 20);		//draw 10 circles
     }
 	
 
@@ -60,12 +60,12 @@ void testApp::mousePressed(int x, int y, int button){
 	posY[counter] = y;
 	
 	counter++;
-	counter %= 10;
+	//counter %= 10;
 	
-	/* if (counter == 10) {
-	 counter = 0
+	 if (counter == 10) {
+		 counter = 1;		//Increase counter by one until it reaches 10. If counter reaches 10, return to first value.
 	}
-	 */
+	 
 }
 
 //--------------------------------------------------------------

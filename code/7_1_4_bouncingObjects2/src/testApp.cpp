@@ -1,29 +1,32 @@
 #include "testApp.h"
 //--------------------------------------------------------------
 void testApp::setup(){
-    ofBackground(0, 0, 0); 
-    ofSetFrameRate(60); 
-    ofSetCircleResolution(64); 
-    ofEnableAlphaBlending();    
-   
-    for(int i = 0; i < NUM_BALLS; i++){
-		bouncers[i].setup();  
+    ofBackground(0, 0, 0);								//Set color background
+    ofSetFrameRate(60);									//Set frame rate
+    ofSetCircleResolution(64);							//Set circle resolution
+    ofEnableAlphaBlending();							//Enable alpha channel	    
+	
+    for(int i = 0; i < NUM_BALLS; i++){					//For loop will go through NUM_BALLS array in setup
+		bouncers[i].setup();							//bouncers will look for the point of the array we are in and call the setup
+														//function we defined in our bouncingBall.h
 	}
 }
+
 
 //--------------------------------------------------------------
 void testApp::update(){
     
-	for(int i = 0; i < NUM_BALLS; i++){
-		bouncers[i].update();  
+	for(int i = 0; i < NUM_BALLS; i++){					//For loop will go through NUM_BALLS array and update 250 balls frame by frame
+		bouncers[i].update();							//bouncers will look for the point of the array we are in and call the update
+														//function we defined in our bouncingBall.h
 	}
 }
-
 //--------------------------------------------------------------
 void testApp::draw(){
 	
-	for(int i = 0; i < NUM_BALLS; i++){
-		bouncers[i].draw();  
+	for(int i = 0; i < NUM_BALLS; i++){					//For loop will go through NUM_BALLS array and draw 250 balls
+		bouncers[i].draw();								//bouncers will look for the point of the array we are in and call the draw
+														//function we defined in our bouncingBall.h
 	}
 	
 }

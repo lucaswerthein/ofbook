@@ -22,17 +22,17 @@ class bouncingBall {
 		void update();
 		void draw();
 		
-		float posX;
-		float posY;
-		float velX;
-		float velY;
+		float posX;				//create variable posX
+		float posY;				//create variable posY
+		float velX;				//create variable velX
+		float velY;				//create variable velY
 		
-		float radius;
-		float red;
-		float green;
-		float blue;
+		float radius;			//create variable radius
+		float red;				//create variable red
+		float green;			//create variable green
+		float blue;				//create variable blue
 		
-		bool bAlive;
+		bool bAlive;			//create boolean variable
 	
 	
 };

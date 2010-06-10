@@ -18,10 +18,9 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 		
-		float posX[10];
-		float posY[10];
-		
-		int counter;
+		float posX[10]; //declare posX as an array with 10 floating points
+		float posY[10]; //declare posX as an array with 10 floating points
+		int counter; //create a counter
 	
 
 };

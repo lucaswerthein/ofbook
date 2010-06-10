@@ -21,9 +21,11 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 	
-		bouncingBall bouncers[NUM_BALLS];
+		bouncingBall bouncers[NUM_BALLS];					//bouncing ball is our data type, which reffers to our bouncingBall class
+															//bouncers is the name of our array
+															//NUM_BALLS is the value of our array	
 		
-		int counter;
+		int counter;										//set counter as a variable type int
 	
 
 };

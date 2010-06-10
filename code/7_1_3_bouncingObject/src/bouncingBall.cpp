@@ -11,7 +11,7 @@
 
 
 //--------------------------------------------------
-void bouncingBall::setup(){
+void bouncingBall::setup(){						//Assign values to variables created in our .H fle
 	posX = ofRandom(0,ofGetWidth());
 	posY = ofRandom(0,ofGetHeight());
 	velX = ofRandom(-6, 6); 
@@ -21,12 +21,12 @@ void bouncingBall::setup(){
 
 //--------------------------------------------------
 void bouncingBall::update(){
-	posX += velX;
-	posY += velY;
-	if(posX < 0 || posX > ofGetWidth()){
+	posX += velX;								//This will create movement on the X axis 
+	posY += velY;								//This will create movement on the Y axis
+	if(posX < 0 || posX > ofGetWidth()){		//If the X position of the ball is greater than the screen width or less than 0, invert direction
 		velX = velX * -1;
 	}
-	if(posY < 0 || posY > ofGetHeight()){
+	if(posY < 0 || posY > ofGetHeight()){		//If the Y position of the ball is greater than the screen height or less than 0, invert direction
 		velY = velY * -1;
 	}
 }
@@ -34,7 +34,7 @@ void bouncingBall::update(){
 
 //--------------------------------------------------
 void bouncingBall::draw(){
-	ofSetColor(200, 40, 150, 100);     
-    ofCircle(posX, posY, 20);
+	ofSetColor(100, 40, 150, 100);				//Set color to circle
+    ofCircle(posX, posY, 20);					//Draw circle
 }
 	

@@ -2,9 +2,10 @@
 #define _TEST_APP
 
 #include "ofMain.h"
-#include "bouncingBall.h"
+#include "bouncingBall.h"									//Include bouncingBall.h in our program
 
-#define NUM_BALLS 250
+#define NUM_BALLS 250										//NUM_BALLS wil have a value of 250. Since this is going to be the value of our array, 
+															//we are saying that our array will have 250 points
 
 class testApp : public ofBaseApp{
 
@@ -21,9 +22,9 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 	
-		bouncingBall bouncers[NUM_BALLS];
-		
-
+		bouncingBall bouncers[NUM_BALLS];					//bouncing ball is our data type, which reffers to our bouncingBall class
+															//bouncers is the name of our array
+															//NUM_BALLS is the value of our array
 };
 
 #endif
